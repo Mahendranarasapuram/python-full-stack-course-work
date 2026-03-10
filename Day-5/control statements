@@ -1,0 +1,48 @@
+  ##Syntax:for var  in seq:
+  ##Seq : list ,tuple,dict,set,str,range
+
+products =['bread','milk','salt','flour','banana']
+for item in products:
+    print(item)
+    
+##for dict datatype
+products={'bread':30,'butter':50,'milk':35,'sugar':45}
+for item in products:
+    print(item,products[item])
+    print("product price:",products[item])
+    print("Buy Now| Add to cart")
+    print("Add to Fav")
+    print("---------------------------")
+    
+## range-->(start,stop+1,step value)-->(0,step+1,1)
+for i in range(1,11,1):
+    print(i)
+for i in range(1,1,-2):
+    print(i)
+n=int(input("Enter the numbers: "))
+for i in range(1,21):
+    print(f'{n}*{i}={n*i}')
+    
+#example for break and continue 
+for i in range(10):
+    if i==5:
+        break
+    print(i)
+for i in range(10):
+    if i==15:
+        break 
+    print(i)
+else:
+    print("End of th numbers")
+    
+#example for login
+pin=1234
+for i in range(5):
+    user_pin=int(input("Enter the pin"))
+    if user_pin==pin:
+        print("Login successfull")
+        break
+    else:
+        print("Invalid passsword,Try again")
+else:
+    print("You have reached the max attempts, Try again after 5 min")
